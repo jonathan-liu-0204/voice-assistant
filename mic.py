@@ -33,7 +33,7 @@ def transcribe_forever(audio):
 
     audio_data = audio
     audio_model = whisper.load_model("base")
-    result = audio_model.transcribe(audio_data,language='zh') #Chinese model
+    result = audio_model.transcribe(audio_data,language='english') #english model
 
     end_time = time.time()
 
